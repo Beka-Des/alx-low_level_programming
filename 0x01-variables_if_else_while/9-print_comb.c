@@ -1,26 +1,24 @@
 #include <stdio.h>
-
 /**
-  * main - prints all possible combinations of single-digit numbers.
-  * separated by ,, followed by a space
-  * Return: 0 after finish
+  * main - prints all single digit numbers of base 10 starting from 0, followed
+  * with comma and apce also a new line.
+  * Return: 0 when finish
   */
 int main(void)
 {
-	char num[] = "0123456789";
+	int n;
 	int i = 0;
 	char comma = ',';
 	char space = ' ';
 
-	while (i < 10)
+	for (n = '0'; n <= '9'; n++)
 	{
-		putchar(num[i]);
-		i++;
-		if (i > 9)
+		putchar(n);
+		if (i > 8)
 			break;
 		putchar(comma);
 		putchar(space);
-
+		i++;
 	}
 	putchar('\n');
 	return (0);
