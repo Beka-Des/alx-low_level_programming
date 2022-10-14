@@ -5,7 +5,7 @@
 /**
   * main: assigns a random number to var n
   * then checks whether n is >0 or <0 or =0
-  * prints n with its sign 
+  * prints n with its sign
   * return 0 every iteration
   */
 int main(void)
